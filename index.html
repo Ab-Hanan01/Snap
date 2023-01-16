@@ -30,7 +30,7 @@
     </style>
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay hidden"></div>
     <nav class="nav">
       <img class="nav__logo" src="./images/logo.svg" alt="logo" />
       <div class="nav__hamberger">
@@ -59,7 +59,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav__list__item">Company <img src="./images/icon-arrow-down.svg" alt=""></span>
+        <li class="nav__list__item"><span>Company</span><img src="./images/icon-arrow-down.svg" alt=""></span>
           <ul class="nav__list__item__list">
             <li class="expand__item"><a href="#">History</a></li>
             <li class="expand__item"><a href="#">Our Team</a></li>
@@ -74,17 +74,19 @@
         <li class="nav__list__item register"><a href="#">Register</a></li>
       </ul>
     </nav>
-    <img src="./images/image-hero-mobile.png" alt="">
-    <h1>Make remote work</h1>
-    <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. </p>
-    <button type="button">Learn more</button>
-    <div>
-      <img src="./images/client-databiz.svg" alt="">
-      <img src="./images/client-audiophile.svg" alt="">
-      <img src="./images/client-meet.svg" alt="">
-      <img src="./images/client-maker.svg" alt="">
-      <div class="attribution">
-    </div>
+    <main class="main">
+      <img class="main__img" src="./images/image-hero-mobile.png" alt="">
+      <h1 class="main__heading">Make remote work</h1>
+      <p class="main__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. </p>
+      <button class="main__button" type="button">Learn more</button>
+      <div class="main__div">
+        <img class="main__div__image" src="./images/client-databiz.svg" alt="">
+        <img class="main__div__image" src="./images/client-audiophile.svg" alt="">
+        <img class="main__div__image" src="./images/client-meet.svg" alt="">
+        <img class="main__div__image" src="./images/client-maker.svg" alt=""> 
+      </div>
+    </main>
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
