@@ -44,7 +44,9 @@ $Almost-black: hsl(0, 0%, 8%);
             list-style: none;
             margin-bottom: 25px;
             opacity: 0;
+            cursor: pointer;
             & span{
+                color: $Medium-gray;
                 margin-right: 12px;
             }
             & a{
@@ -100,6 +102,83 @@ $Almost-black: hsl(0, 0%, 8%);
     padding: 10px;
     border-radius: 12px;
 }
+@media only screen and(min-width:650px) {
+    body{
+        background-color: $Almost-white;
+    }
+    .nav{
+        all: unset;
+        display: flex;
+        gap: 3%;
+        align-items: center;
+        padding: 20px;
+
+        &__hamberger{
+            display: none;
+        }
+        &__list{
+            all: unset;
+            font-size: 12px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            gap: 3%;
+
+            &__item{
+                position: relative;
+                margin-bottom: 0;
+                opacity: 1;
+                display: flex;
+                align-items: center;
+
+                &:hover span,&:hover a{
+                    color: $Almost-black;
+                }
+                & span{
+                    margin-right: 5px;
+                }
+                &__list{
+                    position: absolute;
+                    top: 10px;
+                    background-color:white;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    // transform: scale(1,0);
+                    // opacity: 0;
+                }
+            }
+        }
+    }
+    .features .expand{
+        left: -100px;
+    }
+    .company .expand{
+        left: -20px;
+    }
+    .register:hover{
+        border-color: $Almost-black;
+    }
+.expand__item{
+    width: max-content;
+    font-size: 12px;
+
+    &:last-child{
+            margin: 0;
+        }
+    }     
+    
+    .login,.register{
+        position:absolute;
+    }
+    .login{
+        right: 4%;
+        margin-right: 100px;
+    }
+    .register{
+        right: 3%;
+    }
+}
 .main{
     text-align: center;
     &__img{
@@ -109,7 +188,6 @@ $Almost-black: hsl(0, 0%, 8%);
         margin:  15px 0;
         font-size: 35px;
         font-weight: 700;
-        // border: 1px solid red;
     }
     &__paragraph{
         color:$Medium-gray;

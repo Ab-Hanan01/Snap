@@ -44,8 +44,10 @@
   list-style: none;
   margin-bottom: 25px;
   opacity: 0;
+  cursor: pointer;
 }
 .nav__list__item span {
+  color: hsl(0deg, 0%, 41%);
   margin-right: 12px;
 }
 .nav__list__item a {
@@ -99,6 +101,78 @@
   border-radius: 12px;
 }
 
+@media only screen and (min-width: 650px) {
+  body {
+    background-color: hsl(0deg, 0%, 98%);
+  }
+  .nav {
+    all: unset;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    padding: 20px;
+  }
+  .nav__hamberger {
+    display: none;
+  }
+  .nav__list {
+    all: unset;
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 3%;
+  }
+  .nav__list__item {
+    position: relative;
+    margin-bottom: 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+  .nav__list__item:hover span, .nav__list__item:hover a {
+    color: hsl(0deg, 0%, 8%);
+  }
+  .nav__list__item span {
+    margin-right: 5px;
+  }
+  .nav__list__item__list {
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+  .features .expand {
+    left: -100px;
+  }
+  .company .expand {
+    left: -20px;
+  }
+  .register:hover {
+    border-color: hsl(0deg, 0%, 8%);
+  }
+  .expand__item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 12px;
+  }
+  .expand__item:last-child {
+    margin: 0;
+  }
+  .login, .register {
+    position: absolute;
+  }
+  .login {
+    right: 4%;
+    margin-right: 100px;
+  }
+  .register {
+    right: 3%;
+  }
+}
 .main {
   text-align: center;
 }
