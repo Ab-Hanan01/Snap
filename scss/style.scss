@@ -28,7 +28,7 @@ $Almost-black: hsl(0, 0%, 8%);
     justify-content: space-between;
     padding: 20px;
 
-    &__hamberger {
+    &__icon {
         position: relative;
         z-index: 10;
     }
@@ -77,8 +77,6 @@ $Almost-black: hsl(0, 0%, 8%);
 
 .active {
     transform: scale(1);
-    // transform-origin: right;
-    // transition: transform 500ms linear;
 
     & li {
         opacity: 1;
@@ -132,7 +130,7 @@ $Almost-black: hsl(0, 0%, 8%);
         align-items: center;
         padding: 20px;
 
-        &__hamberger {
+        &__icon {
             display: none;
         }
 
