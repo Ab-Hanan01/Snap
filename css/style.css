@@ -90,7 +90,8 @@
   width: 17px;
 }
 
-.login, .register {
+.login,
+.register {
   text-align: center;
   font-size: 14px;
 }
@@ -101,7 +102,7 @@
   border-radius: 12px;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 800px) {
   body {
     background-color: hsl(0deg, 0%, 98%);
   }
@@ -139,6 +140,7 @@
   }
   .nav__list__item__list {
     position: absolute;
+    z-index: 10;
     top: 10px;
     background-color: white;
     padding: 20px 30px;
@@ -162,7 +164,8 @@
   .expand__item:last-child {
     margin: 0;
   }
-  .login, .register {
+  .login,
+.register {
     position: absolute;
   }
   .login {
@@ -176,8 +179,11 @@
 .main {
   text-align: center;
 }
-.main__img {
+.main__img1 {
   max-width: 100%;
+}
+.main__img2 {
+  display: none;
 }
 .main__heading {
   margin: 15px 0;
@@ -206,4 +212,51 @@
 }
 .main__div__image {
   transform: scale(0.8);
+}
+
+@media only screen and (min-width: 800px) {
+  .main {
+    position: relative;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    gap: 8%;
+    max-width: 1200px;
+    max-height: 750px;
+    margin: 40px auto;
+  }
+  .main__img1 {
+    display: none;
+  }
+  .main__img2 {
+    display: inline;
+    max-width: 100%;
+  }
+  .main__heading {
+    font-size: 70px;
+    margin: 0;
+  }
+  .main__paragraph {
+    font-size: 18px;
+    margin: 40px 0 30px 0;
+  }
+  .main__button {
+    margin: 0;
+  }
+  .main__button:hover {
+    background-color: hsl(0deg, 0%, 98%);
+    color: hsl(0deg, 0%, 8%);
+    border: 1px solid hsl(0deg, 0%, 8%);
+  }
+  .main__div {
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    margin: 0;
+  }
+  .main__div__image {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=style.css.map */
