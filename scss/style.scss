@@ -29,7 +29,9 @@ $Almost-black: hsl(0, 0%, 8%);
     padding: 20px;
 
     &__icon {
-        position: relative;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         z-index: 10;
     }
 
@@ -37,7 +39,7 @@ $Almost-black: hsl(0, 0%, 8%);
         transform: scale(0, 1);
         transform-origin: right;
         transition: transform 250ms linear;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         z-index: 5;
@@ -45,7 +47,7 @@ $Almost-black: hsl(0, 0%, 8%);
         background-color: $Almost-white;
         color: $Medium-gray;
         width: 65%;
-        height: 130%;
+        height: 100%;
 
         &__item,
         &__item-a {
@@ -118,7 +120,7 @@ $Almost-black: hsl(0, 0%, 8%);
     border-radius: 12px;
 }
 
-@media only screen and(min-width:800px) {
+@media only screen and(min-width:900px) {
     body {
         background-color: $Almost-white;
     }
@@ -129,6 +131,8 @@ $Almost-black: hsl(0, 0%, 8%);
         gap: 3%;
         align-items: center;
         padding: 20px;
+        max-width: 1400px;
+        margin: auto;
 
         &__icon {
             display: none;
@@ -136,11 +140,11 @@ $Almost-black: hsl(0, 0%, 8%);
 
         &__list {
             all: unset;
-            font-size: 12px;
+            font-size: 15px;
             position: relative;
             display: flex;
             align-items: center;
-            width: 90%;
+            width: 95%;
             gap: 3%;
 
             &__item {
@@ -166,8 +170,6 @@ $Almost-black: hsl(0, 0%, 8%);
                 background-color: white;
                 padding: 20px 30px;
                 border-radius: 5px;
-                // transform: scale(1,0);
-                // opacity: 0;
             }
         }
     }
@@ -196,15 +198,11 @@ $Almost-black: hsl(0, 0%, 8%);
     .login,
     .register {
         position: absolute;
+        right: 0;
     }
 
     .login {
-        right: 4%;
-        margin-right: 100px;
-    }
-
-    .register {
-        right: 3%;
+        margin-right: 120px;
     }
 }
 
@@ -253,7 +251,7 @@ $Almost-black: hsl(0, 0%, 8%);
     }
 }
 
-@media only screen and(min-width:800px) {
+@media only screen and(min-width:900px) {
     .main {
         position: relative;
         display: flex;
@@ -262,9 +260,8 @@ $Almost-black: hsl(0, 0%, 8%);
         justify-content: space-evenly;
         flex-direction: row-reverse;
         gap: 8%;
-        max-width: 1200px;
-        max-height: 750px;
-        margin: 40px auto;
+        max-width: 1300px;
+        margin: 30px auto;
 
         &__img1 {
             display: none;
@@ -272,7 +269,7 @@ $Almost-black: hsl(0, 0%, 8%);
 
         &__img2 {
             display: inline;
-            max-width: 100%;
+            max-width: 90%;
         }
 
         &__heading {
