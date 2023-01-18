@@ -29,10 +29,16 @@ $Almost-black: hsl(0, 0%, 8%);
     padding: 20px;
 
     &__icon {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
         z-index: 10;
+
+        &__close {
+            position: fixed;
+            top: 16px;
+            right: 21px;
+        }
     }
 
     &__list {
